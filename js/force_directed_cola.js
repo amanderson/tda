@@ -1,5 +1,9 @@
 // Based on http://bl.ocks.org/mbostock/4062045
 
+// The following code is intended as a template for generating
+// a force-directed graph in Jupyter notebooks. This script uses
+// cola.js to equilibrate the graph.
+
 require.config({
     paths: {
         "d3": "http://d3js.org/d3.v4.min.js",
@@ -7,14 +11,14 @@ require.config({
     },
     shim: {
         "cola": {
-            "exports": "cola", 
+            "exports": "cola",
             "deps": ["d3"]
         }
     }
 });
 
 require(["d3","cola"], function(d3) {
-    
+
     var width = 960,
         height = 800;
 

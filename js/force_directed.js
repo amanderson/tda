@@ -1,7 +1,11 @@
 // Based on http://bl.ocks.org/mbostock/4062045
 
-var width = 960,
-    height = 800;
+// The following code is intended as a template for generating
+// a force-directed graph in Jupyter notebooks. This script uses
+// cola.js to equilibrate the graph.
+
+var width  = 960,
+    height = 960;
 
 // use D3 force implementation
 //var force = d3.layout.force()
@@ -25,7 +29,7 @@ var graph = ${data};
 force
     .nodes(graph['vertices'])
     .links(graph['edges'])
-    .start(50,50,50);
+    .start(50,50,30);
 
 //var nodeattr = d3.set();
 //for(n in graph['vertices']) {
