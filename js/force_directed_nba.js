@@ -15,7 +15,7 @@ var width  = 960,
 
 // use Cola force implementation
 var force = cola.d3adaptor()
-    .jaccardLinkLengths(10,0.8)
+    .jaccardLinkLengths(20,0.8)
     .size([width, height])
     .avoidOverlaps(true);
 
@@ -29,7 +29,7 @@ var graph = ${data};
 force
     .nodes(graph['vertices'])
     .links(graph['edges'])
-    .start(50,50,30);
+    .start(50,50,50);
 
 //var nodeattr = d3.set();
 //for(n in graph['vertices']) {
