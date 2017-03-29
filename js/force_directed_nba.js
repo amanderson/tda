@@ -4,8 +4,8 @@
 // a force-directed graph in Jupyter notebooks. This script uses
 // cola.js to equilibrate the graph.
 
-var width  = 960,
-    height = 960;
+var width  = 1000,
+    height = 1000;
 
 // use D3 force implementation
 //var force = d3.layout.force()
@@ -15,7 +15,7 @@ var width  = 960,
 
 // use Cola force implementation
 var force = cola.d3adaptor()
-    .jaccardLinkLengths(20,0.8)
+    .jaccardLinkLengths(12,0.8)
     .size([width, height])
     .avoidOverlaps(true);
 
